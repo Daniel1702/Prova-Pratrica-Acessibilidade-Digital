@@ -14,8 +14,9 @@ header {
   width: 100%;
   text-align: center;
   padding: 20px;
-  background-color: #af3f0f;
+  background-color: #aa471c;
   border-bottom: 3px solid #000000;
+  color: #fbff09;
 }
 
 #container-links {
@@ -31,12 +32,12 @@ a {
   justify-content: space-around;
   text-decoration: none;
   list-style-type: none;
+  color: #051424;
 }
 
 /* Conteúdo principal */
 .container-principal {
   padding: 10px;
-  margin-top: 3px;
   min-height: 100vh;
   text-align: left;
 }
@@ -78,6 +79,9 @@ h3 {
   margin: 10px;
 }
 
+header h1:hover {
+  color: rgb(255, 184, 126);
+}
 
 .container-principal h2 {
   font-size: 30px;
@@ -87,7 +91,7 @@ h3 {
 
 .container-principal h3 {
   font-size: 25px;
-  margin: 12px;
+  margin: 10px;
 }
 
 .container-principal p {
@@ -96,7 +100,6 @@ h3 {
 
 /* Rodapé */
 footer {
-  margin-top: 2px;
   text-align: center;
   padding: 50px;
   background-color: #5d7aa2;
@@ -109,10 +112,12 @@ footer {
 
 
 /* Dark mode */
-.dark-mode * {
+.dark-mode *,
+.dark-mode .container {
   background-color: #0f4e69;
   color: aliceblue;
 }
+
 
 .img {
   width: 50px;
