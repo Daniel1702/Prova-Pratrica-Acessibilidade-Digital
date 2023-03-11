@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Acessibilidade Digital</title>
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Acessibilidade Digital</h1>
+    </header>
+    <!-- Links-cabeçalho // Lista não ordenada-->
+    <div id="container-links">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index2.html">Quem somos</a></li>
+                <li><a href="index3.html">Exemplares</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- Conteúdo principal -->
+    <main class="container-principal">
+        <img class="img botao-fixado" src="https://cdn-icons-png.flaticon.com/512/1687/1687737.png"
+            onclick="darkMode()" />
+        <section>
+            <h2>Garantindo que Todos Possam Acessar e<br> Usar Recursos Digitais com Equidade e Inclusão</h2>
+            <article>
+                <h3>O que é Acessibilidade Digital?</h3>
+                <p>Acessibilidade digital refere-se ao design e desenvolvimento de recursos digitais, como sites,
+                    aplicativos e dispositivos, de forma que todas as pessoas, independentemente de suas habilidades ou
+                    limitações, possam acessar e usar esses recursos de maneira efetiva e equitativa. Isso inclui
+                    pessoas com deficiência visual, auditiva, cognitiva ou física. Acessibilidade digital é um direito
+                    humano fundamental e uma necessidade importante para garantir a inclusão social e digital de todas
+                    as pessoas.</p>
+            </article>
+        </section>
+        <section>
+            <article>
+                <h3>Importância da acessibilidade digital:</h3>
+                <p> Acessibilidade é um direito humano: todas as pessoas, independentemente de suas habilidades, têm o
+                    direito de acessar e usar as mesmas informações e recursos digitais.
+                    Benefícios para empresas e organizações: a acessibilidade digital pode melhorar a usabilidade e o
+                    engajamento do usuário, ampliar o público e evitar processos judiciais por discriminação.</p>
+            </article>
+            <article>
+                <h3>Como criar sites acessíveis:</h3>
+                <p>Design inclusivo: criar designs que funcionem para todos os usuários, independentemente de suas
+                    habilidades ou limitações.
+                    Diretrizes de acessibilidade: seguir as diretrizes de acessibilidade da WCAG (Web Content
+                    Accessibility Guidelines) para garantir
+                    que o site seja acessível para pessoas com deficiência visual, auditiva, cognitiva ou física.</p>
+            </article>
+        </section>
+        <section>
+            <div class="s-2">
+                <h2>Saiba mais</h2>
+                <hr> <br>
+                <div class="s--2">
+                    <ul>
+                        <li>
+                            <img src="imagens/Acessibilidade-digital-e-experiencia-do-usuario_capa.png" alt="">
+                            <p>&copf; Acessibilidade Digital</p>
+                        </li>
+                        <p>Acessibilidade digital é a garantia de que pessoas com deficiências físicas ou cognitivas
+                            possam acessar e interagir com conteúdo online. É um direito fundamental de todos os
+                            usuários, independentemente de suas habilidades. Nós nos dedicamos a tornar a tecnologia
+                            mais inclusiva, para que todos possam aproveitar os benefícios da web.
+
+                        </p>
+                        <li>
+                            <iframe width="450" height="350" src="https://www.youtube.com/embed/mNg77F3L2lc?autoplay=0"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                            <p>Como você pode ajudar?</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Rodapé -->
+    <footer>
+        <p>2023 Minha Empresa.com.br. <span class="bold">Todos os direitos reservados.</span></p>
+    </footer>
+
+    <!-- plug-in para leitura em libras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app') 
+    </script>
+    <!-- Dark mode -->
+
+    <div class="botao-fixado">
+        <script>
+            function darkMode() {
+                let minhaImagem = document.querySelector('img');
+                var element = document.body;
+                element.classList.toggle("dark-mode");
+                let meuSrc = minhaImagem.getAttribute('src');
+                if (meuSrc === 'https://cdn-icons-png.flaticon.com/512/1687/1687737.png') {
+                    minhaImagem.setAttribute('src', 'https://cdn-icons-png.flaticon.com/512/1687/1687686.png');
+                } else {
+                    minhaImagem.setAttribute('src', 'https://cdn-icons-png.flaticon.com/512/1687/1687737.png');
+                }
+            }
+        </script>
+    </div>
+</body>
+
+</html>

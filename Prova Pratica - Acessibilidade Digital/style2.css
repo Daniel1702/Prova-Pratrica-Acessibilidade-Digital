@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+/* Cabeçalho 2*/
+header {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: #af3f0f;
+    border-bottom: 3px solid #000000;
+}
+
+#container-links {
+    padding: 8px;
+    width: 100%;
+    border-bottom: 3px solid #000000;
+}
+
+.container-links nav,
+ul,
+a {
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+/* Cabelçalho */
+
+/* Grid dos produtos/livros */
+.container {
+    background-color: #EEE;
+    min-height: 60vh;
+    padding: 50px;
+}
+
+
+.products-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    width: 31%;
+    display: inline-block;
+    margin: 1% 1%;
+    padding: 15px;
+}
+
+.product-image {
+    height: 300px;
+    width: 100%;
+    margin-bottom: 10px;
+    background-position: center;
+    background-size: cover;
+    border-bottom: 1px solid #0ba145;
+}
+
+#img-1 {
+    background-image: url('imagens/acessibilidade-digital--img01.jpg');
+}
+
+#img-2 {
+    background-image: url('imagens/acessibilidade-digital--02.png');
+}
+
+#img-3 {
+    background-image: url('imagens/acessibilidade-digital--03.jpg');
+}
+
+h3 {
+    margin-bottom: 10px;
+    color: #3db36b;
+    font-size: 24px;
+    border-left: 5px solid #0f642f;
+    padding-left: 7px;
+}
+
+.card p {
+    margin-bottom: 10px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #3db36b;
+    color: #FFF;
+    padding: 15px;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.btn:hover {
+    background-color: #0f642f;
+}
+
+
+
+/* Footer  */
+footer {
+    background-color: #3db36b;
+    color: #FFF;
+    border-top: 3px solid #0f642f;
+    text-align: center;
+    padding: 80px;
+}
+
+/* detalhes  */
+.index-3-main h2 {
+    text-align: center;
+}

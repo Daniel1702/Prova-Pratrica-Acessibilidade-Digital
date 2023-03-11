@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Acessibilidade Digital</title>
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Acessibilidade Digital</h1>
+    </header>
+    <!-- Links-cabeçalho // Lista não ordenada-->
+    <div id="container-links">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index2.html">Quem somos</a></li>
+                <li><a href="index3.html">Contato</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- Conteúdo principal -->
+    <main class="container-principal">
+        <img class="img botao-fixado" src="https://cdn-icons-png.flaticon.com/512/1687/1687737.png"
+            onclick="darkMode()" />
+        <section>
+            <h2>Nossa Equipe</h2>
+            <article>
+                <h3>Projeto Acessibilidade Digital</h3>
+                <p>Nós somos uma equipe apaixonada por tornar a tecnologia acessível a todos, independentemente das
+                    habilidades físicas ou cognitivas. Nosso objetivo é tornar a web um lugar mais inclusivo, garantindo
+                    que todos possam acessar e interagir com conteúdo digital de maneira fácil e eficiente. Junte-se a
+                    nós na nossa missão de tornar a acessibilidade digital uma realidade para todos.</p>
+            </article>
+        </section>
+        <section>
+            <article>
+                <h3>Contate-nos</h3>
+                <p> Para entrar em contato conosco e saber mais sobre nossos serviços de acessibilidade digital, envie
+                    um e-mail para [inserir o endereço de e-mail da empresa aqui]. Estamos sempre disponíveis para
+                    responder às suas perguntas e ajudá-lo a tornar seu conteúdo digital mais acessível. Aguardamos seu
+                    contato!</p>
+            </article>
+        </section>
+    </main>
+    <!-- Rodapé -->
+    <footer>
+        <p>2023 Minha Empresa.com.br. <span class="bold">Todos os direitos reservados.</span></p>
+    </footer>
+
+    <!-- plug-in para leitura em libras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app') 
+    </script>
+    <!-- Dark mode -->
+
+    <div class="botao-fixado">
+        <script>
+            function darkMode() {
+                let minhaImagem = document.querySelector('img');
+                var element = document.body;
+                element.classList.toggle("dark-mode");
+                let meuSrc = minhaImagem.getAttribute('src');
+                if (meuSrc === 'https://cdn-icons-png.flaticon.com/512/1687/1687737.png') {
+                    minhaImagem.setAttribute('src', 'https://cdn-icons-png.flaticon.com/512/1687/1687686.png');
+                } else {
+                    minhaImagem.setAttribute('src', 'https://cdn-icons-png.flaticon.com/512/1687/1687737.png');
+                }
+            }
+        </script>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+/* Ajustes gerais no código --> "Resetando" */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Cabeçalho */
+header {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  background-color: #af3f0f;
+  border-bottom: 3px solid #000000;
+}
+
+#container-links {
+  padding: 8px;
+  width: 100%;
+  border-bottom: 3px solid #000000;
+}
+
+.container-links nav,
+ul,
+a {
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+/* Conteúdo principal */
+.container-principal {
+  padding: 10px;
+  margin-top: 3px;
+  min-height: 100vh;
+  text-align: left;
+}
+
+section a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.s--2 img {
+  display: flex;
+
+}
+
+.s--2 p {
+  width: 420px;
+  text-align: justify;
+}
+
+.s-2 h2 {
+  margin-top: 40px;
+}
+
+.s-2 img {
+  background-size: cover;
+  width: 420px;
+  height: 350px;
+  border-bottom: 1px solid #000000;
+}
+
+.s-2 p {
+  text-align: center;
+}
+
+/* tipografia // estilizando as letras  */
+
+section h2,
+h3 {
+  margin: 10px;
+}
+
+
+.container-principal h2 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.container-principal h3 {
+  font-size: 25px;
+  margin: 12px;
+}
+
+.container-principal p {
+  font-size: 20px;
+}
+
+/* Rodapé */
+footer {
+  margin-top: 2px;
+  text-align: center;
+  padding: 50px;
+  background-color: #5d7aa2;
+  border-top: 3px solid #000000;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+
+/* Dark mode */
+.dark-mode * {
+  background-color: #0f4e69;
+  color: aliceblue;
+}
+
+.img {
+  width: 50px;
+  padding: 5px;
+
+
+  border-radius: 50%;
+  box-shadow: 1px 5px 10px rgb(141, 115, 115);
+  cursor: pointer;
+}
+
+.botao-fixado {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  transition: .5s;
+}
+
+.botao-fixado:hover {
+  background-color: white;
+}
